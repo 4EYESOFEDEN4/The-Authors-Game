@@ -11,6 +11,14 @@ function loadRealm(realmNumber) {
     <p>This Realm is active.</p>
   `;
 }
+  function loadScene(sceneName) {
+  const realm = document.getElementById("realm");
+
+  realm.innerHTML = `
+    <h4>Scene: ${sceneName}</h4>
+    <p>Scene loaded successfully.</p>
+  `;
+}
 
  if (worldName === "world1") {
   content.innerHTML = `
