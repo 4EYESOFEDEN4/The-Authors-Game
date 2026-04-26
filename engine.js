@@ -2,6 +2,15 @@ console.log("TAG Engine initialised");
 
 function loadWorld(worldName) {
   const content = document.getElementById("content");
+  
+function loadRealm(realmNumber) {
+  const realm = document.getElementById("realm");
+
+  realm.innerHTML = `
+    <h3>Realm ${realmNumber} Loaded</h3>
+    <p>This Realm is active.</p>
+  `;
+}
 
  if (worldName === "world1") {
   content.innerHTML = `
