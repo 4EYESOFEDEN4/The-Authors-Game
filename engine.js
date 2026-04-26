@@ -26,20 +26,42 @@ function loadRealm(realmNumber) {
     <p>The 12‑Realm Liturgical Engine is active.</p>
 
     <button onclick="loadRealm(1)">Realm 1 — Awakening</button>
+    <button onclick="loadScene('intro')">Enter Scene</button>
     <button onclick="loadRealm(2)">Realm 2 — Preparation</button>
+    <button onclick="loadScene('intro')">Enter Scene</button>
     <button onclick="loadRealm(3)">Realm 3 — Offering</button>
+    <button onclick="loadScene('intro')">Enter Scene</button>
     <button onclick="loadRealm(4)">Realm 4 — Reflection</button>
+    <button onclick="loadScene('intro')">Enter Scene</button>
     <button onclick="loadRealm(5)">Realm 5 — Illumination</button>
+    <button onclick="loadScene('intro')">Enter Scene</button>
     <button onclick="loadRealm(6)">Realm 6 — Pilgrimage</button>
+    <button onclick="loadScene('intro')">Enter Scene</button>
     <button onclick="loadRealm(7)">Realm 7 — Communion</button>
+    <button onclick="loadScene('intro')">Enter Scene</button>
     <button onclick="loadRealm(8)">Realm 8 — Transformation</button>
+    <button onclick="loadScene('intro')">Enter Scene</button>
     <button onclick="loadRealm(9)">Realm 9 — Surrender</button>
+    <button onclick="loadScene('intro')">Enter Scene</button>
     <button onclick="loadRealm(10)">Realm 10 — Renewal</button>
+    <button onclick="loadScene('intro')">Enter Scene</button>
     <button onclick="loadRealm(11)">Realm 11 — Blessing</button>
+    <button onclick="loadScene('intro')">Enter Scene</button>
     <button onclick="loadRealm(12)">Realm 12 — Return</button>
 
     <div id="realm"></div>
   `;
+}
+  function showDialogue(lines) {
+  const realm = document.getElementById("realm");
+
+  let html = "<div class='dialogue'>";
+  lines.forEach(line => {
+    html += `<p>${line}</p>`;
+  });
+  html += "</div>";
+
+  realm.innerHTML = html;
 }
 
 
