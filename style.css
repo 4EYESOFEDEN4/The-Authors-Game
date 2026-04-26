@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Author's Game</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+  background: #111;
+  color: #eee;
+  font-family: system-ui, sans-serif;
+  padding: 40px;
+}
 
-  <div id="app">
-    <h1>The Author’s Game</h1>
-    <p>Engine loaded successfully.</p>
-  </div>
+#app {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
 
-  <script src="engine.js"></script>
-</body>
-</html>
