@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Author's Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+    <h1>The Author’s Game</h1>
+    <p>Engine loaded successfully.</p>
+  </div>
+
+  <script src="engine.js"></script>
+</body>
+</html>
