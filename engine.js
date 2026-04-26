@@ -72,3 +72,11 @@ function loadRealm(realmNumber) {
     `;
   }
 }
+function runRitual(name) {
+  const realm = document.getElementById("realm");
+
+  realm.innerHTML = `
+    <h4>Ritual: ${name}</h4>
+    <p>You perform the ritual.</p>
+  `;
+}
